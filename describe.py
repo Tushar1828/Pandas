@@ -3,8 +3,14 @@
 import pandas as pd
 
 data = {
-    "Name": ['Ram','shyam','ghanshyam','dhanshyam','Aditi','jgdish','Raj','Simran'],
-    "Age": [26,34,23,34,43,12,41],
-    "salary":[30000,45000,24000,54000,39000,52000,30000,64000],
-    "Performance Score":[54,65,78,65,76,86,98,60]
+    "Name" : ['vishal','Vivek','vaibhav'],
+    "Age" : [20, 22, 24],
+    "City" : ['nagpur', 'kanpur','sikandarpur'],
+
 }
+
+df = pd.DataFrame(data)
+print("Sample DataFrame")
+print(df)
+print('Descriptive statistics')
+print(df.describe())
