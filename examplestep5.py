@@ -16,3 +16,8 @@ print(df)
 print("Names (single column return series)")
 name = df['Name']
 print(name)
+
+#selecting multiple columns
+subset = df[["Name", "Salary"]]
+print('\nSubset with Name and salary')
+print(subset)
