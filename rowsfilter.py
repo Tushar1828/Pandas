@@ -21,5 +21,5 @@ print(filtered)
 
 #using OR condition
 filtered_or = df[(df['Age']  > 22) & (df["Performance_Score"] > 90)]
-print('Employee older then 35 OR performance score > 90')
+print('Employee older then 22 OR Performance score > 90')
 print(filtered_or)
