@@ -10,3 +10,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+result = df[df['Salary'] > 50000]
+
+print(result)
