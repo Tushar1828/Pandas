@@ -16,7 +16,8 @@
 # print(result)
 
 # How do you merge two DataFrames?
- 
+import pandas as pd
+
 df1 = pd.DataFrame({
     'ID': [1, 2],
     'Name': ['Amit', 'Rahul']
@@ -27,3 +28,6 @@ df2 = pd.DataFrame({
     'Salary': [30000, 40000]
 })
 
+result = pd.merge(df1, df2, on='ID')
+
+print(result)
