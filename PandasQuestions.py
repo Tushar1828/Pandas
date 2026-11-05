@@ -42,3 +42,6 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+result = df[df['Amount'] > 10000]
+print(result)
