@@ -34,14 +34,25 @@
 
 # Customers Who Spent More Than ₹10,000
 
+# import pandas as pd
+
+# data = {
+#     'Customer': ['A', 'B', 'C', 'D'],
+#     'Amount': [4900, 17000, 56000, 67000]
+# }
+
+# df = pd.DataFrame(data)
+
+# result = df[df['Amount'] > 10000]
+# print(result)
+
+# Calculate Profit and Loss
 import pandas as pd
 
 data = {
-    'Customer': ['A', 'B', 'C', 'D'],
-    'Amount': [4900, 17000, 56000, 67000]
+    'Product': ['Laptop', 'Mobile', 'Tablet'],
+    'Selling_Price': [60000, 25000, 30000],
+    'Cost_Price': [45000, 20000, 28000]
 }
 
 df = pd.DataFrame(data)
-
-result = df[df['Amount'] > 10000]
-print(result)
