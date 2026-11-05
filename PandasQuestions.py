@@ -56,3 +56,7 @@ data = {
 }
 
 df = pd.DataFrame(data)
+
+df['Profit'] = (
+    df['Selling_Price'] - df['Cost_Price']
+)
