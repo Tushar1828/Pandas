@@ -47,17 +47,25 @@
 # print(result)
 
 # Calculate Profit and Loss
+# import pandas as pd
+
+# data = {
+#     'Product': ['Laptop', 'Mobile', 'Tablet'],
+#     'Selling_Price': [60000, 25000, 30000],
+#     'Cost_Price': [45000, 20000, 28000]
+# }
+
+# df = pd.DataFrame(data)
+
+# df['Profit'] = (
+#     df['Selling_Price'] - df['Cost_Price']
+# )
+# print(df)
+
+# the difference between consecutive transactions.
 import pandas as pd
 
-data = {
-    'Product': ['Laptop', 'Mobile', 'Tablet'],
-    'Selling_Price': [60000, 25000, 30000],
-    'Cost_Price': [45000, 20000, 28000]
-}
 
-df = pd.DataFrame(data)
-
-df['Profit'] = (
-    df['Selling_Price'] - df['Cost_Price']
-)
-print(df)
+df = pd.DataFrame({
+    'Amount': [1000, 1500, 1200, 2000, 2500]
+})
