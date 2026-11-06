@@ -69,3 +69,7 @@ import pandas as pd
 df = pd.DataFrame({
     'Amount': [1000, 1500, 1200, 2000, 2500]
 })
+
+df['Difference'] = df['Amount'].diff()
+
+print(df)
