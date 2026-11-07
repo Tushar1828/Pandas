@@ -63,13 +63,25 @@
 # print(df)
 
 # the difference between consecutive transactions.
+# import pandas as pd
+
+
+# df = pd.DataFrame({
+#     'Amount': [1000, 1500, 1200, 2000, 2500]
+# })
+
+# df['Difference'] = df['Amount'].diff()
+
+# print(df)
+
+
+# the top two employees in each department based on salary.
+
 import pandas as pd
 
 
 df = pd.DataFrame({
-    'Amount': [1000, 1500, 1200, 2000, 2500]
+    'Name': ['A', 'B', 'C', 'D', 'E', 'F'],
+    'Department': ['IT', 'IT', 'IT', 'HR', 'HR', 'HR'],
+    'Salary': [30000, 50000, 40000, 25000, 45000, 35000]
 })
-
-df['Difference'] = df['Amount'].diff()
-
-print(df)
