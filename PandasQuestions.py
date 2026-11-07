@@ -89,3 +89,6 @@ df = pd.DataFrame({
 result = df.sort_values(
     'Salary',
     ascending=False
+    ).groupby('Department').head(2)
+
+print(result)
