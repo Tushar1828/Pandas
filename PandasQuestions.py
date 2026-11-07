@@ -85,3 +85,7 @@ df = pd.DataFrame({
     'Department': ['IT', 'IT', 'IT', 'HR', 'HR', 'HR'],
     'Salary': [30000, 50000, 40000, 25000, 45000, 35000]
 })
+
+result = df.sort_values(
+    'Salary',
+    ascending=False
