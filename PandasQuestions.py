@@ -104,6 +104,11 @@ df = pd.DataFrame({
                2500, 4000, 1200, 3500]
 })
 
-result = df['Customer'].value_counts()
+# result = df['Customer'].value_counts()
 
-print(result[result > 2])
+# print(result[result > 2])
+result = df.groupby('Customer').filter(
+    lambda x: len(x) > 2
+)
+
+print(result)
