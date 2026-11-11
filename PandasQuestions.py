@@ -103,3 +103,7 @@ df = pd.DataFrame({
     'Amount': [1000, 2000, 1500, 3000,
                2500, 4000, 1200, 3500]
 })
+
+result = df['Customer'].value_counts()
+
+print(result[result > 2])
