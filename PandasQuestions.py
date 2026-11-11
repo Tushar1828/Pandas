@@ -77,18 +77,29 @@
 
 # the top two employees in each department based on salary.
 
+# import pandas as pd
+
+
+# df = pd.DataFrame({
+#     'Name': ['A', 'B', 'C', 'D', 'E', 'F'],
+#     'Department': ['IT', 'IT', 'IT', 'HR', 'HR', 'HR'],
+#     'Salary': [30000, 50000, 40000, 25000, 45000, 35000]
+# })
+
+# result = df.sort_values(
+#     'Salary',
+#     ascending=False
+#     ).groupby('Department').head(2)
+
+# print(result)
+
+# customers who purchased more than twice
+
 import pandas as pd
 
-
 df = pd.DataFrame({
-    'Name': ['A', 'B', 'C', 'D', 'E', 'F'],
-    'Department': ['IT', 'IT', 'IT', 'HR', 'HR', 'HR'],
-    'Salary': [30000, 50000, 40000, 25000, 45000, 35000]
+    'Customer': ['Amit', 'Rahul', 'Amit', 'Priya',
+                 'Rahul', 'Amit', 'Tushar', 'Rahul'],
+    'Amount': [1000, 2000, 1500, 3000,
+               2500, 4000, 1200, 3500]
 })
-
-result = df.sort_values(
-    'Salary',
-    ascending=False
-    ).groupby('Department').head(2)
-
-print(result)
