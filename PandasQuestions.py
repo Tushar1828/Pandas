@@ -137,3 +137,7 @@ import pandas as pd
 df = pd.DataFrame({
     'Customer': ['A', 'B', 'A', 'C', 'B', 'A']
 })
+
+counts = df['Customer'].value_counts()
+
+print(counts[counts == 2])
