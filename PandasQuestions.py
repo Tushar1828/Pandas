@@ -123,3 +123,9 @@ df = pd.DataFrame(
     'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
     'Salary': [30000, 50000, 40000, 70000]
 })
+
+avg = df['Salary'].mean()
+
+result = df[df['Salary'] > avg]
+
+print(result)
