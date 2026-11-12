@@ -116,16 +116,24 @@
 
 # employees with salaries above the company average
 
+# import pandas as pd
+
+# df = pd.DataFrame(
+#     {
+#     'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
+#     'Salary': [30000, 50000, 40000, 70000]
+# })
+
+# avg = df['Salary'].mean()
+
+# result = df[df['Salary'] > avg]
+
+# print(result)
+
+# customers who made exactly 2 purchases.
+
 import pandas as pd
 
-df = pd.DataFrame(
-    {
-    'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
-    'Salary': [30000, 50000, 40000, 70000]
+df = pd.DataFrame({
+    'Customer': ['A', 'B', 'A', 'C', 'B', 'A']
 })
-
-avg = df['Salary'].mean()
-
-result = df[df['Salary'] > avg]
-
-print(result)
