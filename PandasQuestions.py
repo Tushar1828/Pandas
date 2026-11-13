@@ -151,3 +151,6 @@ df = pd.DataFrame({
     'City': ['Delhi', 'Mumbai', 'Delhi', 'Patna'],
     'Sales': [10000, 20000, 15000, 5000]
 })
+
+city_sales = df.groupby('City')['Sales'].sum()
+
