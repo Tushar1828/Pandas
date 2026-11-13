@@ -154,3 +154,6 @@ df = pd.DataFrame({
 
 city_sales = df.groupby('City')['Sales'].sum()
 
+percentage = city_sales / city_sales.sum() * 100
+
+print(percentage)
