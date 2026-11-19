@@ -171,3 +171,4 @@ df = pd.DataFrame({
 })
 
 result = df['Customer'].value_counts()
+print(result[result > 2])
