@@ -172,3 +172,16 @@
 
 # result = df['Customer'].value_counts()
 # print(result[result > 2])
+
+#  customers who purchased more than twice
+
+import pandas as pd
+
+df = pd.DataFrame({
+    'Customer': ['Amit', 'Rahul', 'Amit', 'Priya',
+                 'Rahul', 'Amit', 'Tushar', 'Rahul'],
+    'Amount': [1000, 2000, 1500, 3000,
+               2500, 4000, 1200, 3500]
+})
+
+result = df['Customer'].value_counts()
