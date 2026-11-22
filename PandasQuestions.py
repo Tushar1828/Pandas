@@ -185,3 +185,12 @@
 # })
 
 # result = df['Customer'].value_counts()
+
+# the second-highest salary from an employee DataFrame.
+
+import pandas as pd
+
+df = pd.DataFrame({
+    'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
+    'Salary': [30000, 50000, 70000, 60000]
+})
