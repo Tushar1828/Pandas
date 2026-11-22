@@ -195,5 +195,10 @@ df = pd.DataFrame({
     'Salary': [30000, 50000, 70000, 60000]
 })
 
-result = df['Salary'].drop_duplicates().nlargest(2).iloc[-1]
+# result = df['Salary'].drop_duplicates().nlargest(2).iloc[-1]
+# print(result)
+
+avg = df['Salary'].mean()
+
+result = df[df['Salary'] > avg]
 print(result)
