@@ -6,3 +6,9 @@ data = {
     "Salary": [50000, 60000, 45000, 52000, 49000, 70000, 48000, 58000],
     "Performance_Score": [85, 90, 78, 92, 88, 95, 80, 89]
 }
+
+df = pd.DataFrame(data)
+print(df)
+
+df["Bonus"] = df['Salary'] * 0.1
+print(df)
