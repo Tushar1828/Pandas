@@ -1,3 +1,6 @@
+#fillna()
+#fillna(value, inplace=True)
+
 import pandas as pd
 
 data = {
@@ -10,5 +13,5 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-df.dropna(inplace=True)
+df.fillna(0, inplace=True)
 print(df)
