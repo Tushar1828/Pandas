@@ -13,5 +13,7 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-df.fillna(0, inplace=True)
+# df.fillna(0, inplace=True)
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+df['Salary'].fillna(df['Salary'].mean(), inplace=True)
 print(df)
