@@ -199,6 +199,5 @@ df = pd.DataFrame({
 # print(result)
 
 avg = df['Salary'].mean()
-
 result = df[df['Salary'] > avg]
 print(result)
