@@ -188,16 +188,16 @@
 
 # the second-highest salary from an employee DataFrame.
 
-# import pandas as pd
+import pandas as pd
 
-# df = pd.DataFrame({
-#     'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
-#     'Salary': [30000, 50000, 70000, 60000]
-# })
+df = pd.DataFrame({
+    'Name': ['Amit', 'Rahul', 'Priya', 'Tushar'],
+    'Salary': [30000, 50000, 70000, 60000]
+})
 
-# result = df['Salary'].drop_duplicates().nlargest(2).iloc[-1]
-# print(result)
+result = df['Salary'].drop_duplicates().nlargest(2).iloc[-1]
+print(result)
 
-# avg = df['Salary'].mean()
-# result = df[df['Salary'] > avg]
-# print(result)
+avg = df['Salary'].mean()
+result = df[df['Salary'] > avg]
+print(result)
